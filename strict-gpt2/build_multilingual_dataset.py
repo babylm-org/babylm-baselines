@@ -23,7 +23,7 @@ import pandas as pd
 BYTE_PREMIUMS = {
     'en': 1.0,
     'nld': 1.0516,
-    'zho': 0.9894,
+    'zho': 0.935966,
 }
 
 LANGUAGE_DATASETS = {

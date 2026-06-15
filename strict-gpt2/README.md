@@ -22,8 +22,8 @@ The repository contains helper scripts to download the raw datasets for each cha
 
 ```
 bash experiment_scripts/download_datasets.sh                                  
-bash experiment_scripts/clean_all_datasets.sh				      
 bash experiment_scripts/split_all_parquet_datasets.sh			      
+bash experiment_scripts/clean_all_datasets.sh				      
 bash experiment_scripts/build_all_multilingual.sh			      
      							  		      
 bash experiment_scripts/train_all_tokenizers.sh				     
@@ -31,8 +31,8 @@ bash experiment_scripts/train_all_tokenizers.sh
 
 In sequence, this
 - Downloads the Strict, Strict-Small and nld/zho datasets from BabyLM-community
-- Cleans each individual dataset
 - Splits the nld/zho dataset .parquet files to data source-specific parquet files to match with the Strict/Strict-Small dataset formats
+- Cleans each individual dataset
 - Constructs multilingual datasets with different mixes of languages while taking into account each language's byte-premiums
 - Trains BPE tokenizers on each constructed dataset
 
